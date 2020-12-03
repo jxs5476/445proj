@@ -2,6 +2,7 @@ import keras
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import json
 
 
 # arr,left point,right point
@@ -10,6 +11,7 @@ def plot(arr, lp, rp):
     subArr = arr[lp:rp]
     plt.plot(subArr)
     plt.show()
+    resultString = json.dumps(subArr)
 
 
 point1 = 1
